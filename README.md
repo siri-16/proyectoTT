@@ -1,5 +1,5 @@
 # proyectoTT
 ## Trabajo Terminal No. TT 2020-A112
 *Autores:*
-**Raquel Iris López López**
-**Karen Olivia Martínez Clavería**
+1. **Raquel Iris López López**
+1 .**Karen Olivia Martínez Clavería**
