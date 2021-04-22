@@ -6,50 +6,93 @@
         <title>Servicio de Tokenización para comercios</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
     </head>
 
     <body>
-    <div class="container-12 bg-danger">Tokenización</div>
     <!-- START NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-mor " id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/ESCOM_1.png" alt="" width="200">
+            <a class="navbar-brand col-8" href="#">
+                <img src="img/ESCOM_1.png" alt="" width="100">
             </a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse col-2"  id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Summer pack</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Información</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ingresar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Más</a></li>
                 </ul>
             </div>
         </div>
     </nav> <!-- END NAVBAR-->
 
-    <div id="carrusel1" class="carousel slide" data-bs-ride="carousel">
+    <!-- START CARRUSEL-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/Cry02.png" class="d-block w-100" alt="...">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/Cry02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="img/Cry01.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/IPN_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="img/Cry01.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
             </div>
         </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>     <!-- END CARRUSEL-->
+
+    <!-- START PIE DE PÁGINA-->
+    <div id="footer" class="p-5">
+        <div class="container w-50 pt-5">
+          <div class="row row-cols-md-2 justify-content-md-center">
+            <div class="col text-center">
+              <a href="#">
+                <button class="btn btn-lg rounded-pill btn-mor w-100  p-3 shadow-sm font-weight-bold">Customer Support</button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="row justify-content-md-center py-5">
+            <div class="col text-center font-weight-light">
+              <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D mode for children 6 and under.</p>
+              <p>Internet access required for online features. For more info, go to support.nintendo.com.</p>
+              <p>Games and amiibo accessories sold separately. Figures shown not actual size. Compatibility and functionality of amiibo may vary per game. Visit amiibo.com for specific details on how each amiibo works.</p>
+              <p>© 2001 - 2020 Nintendo. Nintendo properties are trademarks of Nintendo.</p>
+            </div>
+            
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>    <!-- END PIE DE PÁGINA-->
+
 
 
 
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/popper.min.js" ></script>
-    </body>
+    </body> 
 </html>

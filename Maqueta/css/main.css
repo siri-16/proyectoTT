@@ -1,0 +1,10 @@
+#navbar{
+    z-index: 1;
+}
+
+#footer{
+    background: url(../img/IPN_1.png);
+    background-color: rgb(80, 28, 45);
+    
+    background-size: 50px 50px;
+}
