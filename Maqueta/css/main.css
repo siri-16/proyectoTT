@@ -3,10 +3,10 @@
 }
 
 #footer{
-    background: url(../img/cryp04.jpg);
+    background: url(../img/cry07.jpg);
     background-color: #42669a;
-    background-size: 1920px 1080px;
-    opacity: 0.8;
+    background-size: 50%;
+    opacity: 0.6;
 }
 
 #separator-ribbon{
@@ -47,3 +47,13 @@
  .form {
     width: 450px;
   }
+
+  .card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
