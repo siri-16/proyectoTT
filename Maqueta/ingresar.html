@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 </head>
 <body>
+
     <!-- START NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-rom" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-orm" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand ms-5 col-7" href="#">
                 <img src="img/ESCOM_1.png" alt="" width="100">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-             </button>
-        
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active bi-house" aria-current="page" href="index.html">Inicio</a></li>
@@ -30,13 +30,7 @@
                 </ul>
             </div>
         </div>
-    </nav> <!-- END NAVBAR-->
-
-    <div id="separator-ribbon">
-        <div class="content bg-sec"></div>
-    </div>
-
-
+     </nav> <!-- END NAVBAR-->
 
 
 
@@ -44,41 +38,35 @@
     <!-- START INGRESAR-->
   
     <div id="ingresar">
-        <div class="container-md p-5">
+        <div class="container-md p-5 mt-6">
           
             <div class="row pt-8">
                 <h3 class="mb-auto mt-2 text-center text-white bi-clipboard-data">Ingresar</h3>
             </div>
   
-            <div class="row bg-dark mt-2">
+            <div class="row mx-auto w-50 bg-dark mt-2">
 
-                <div class="col-sm">
-                    <div class="card w-50 card-border mb-3 mt-3 me-3 ms-3">
-                        
+  
 
-                        <section class="col-10 col-sm-8 col-md-7">
-                            <form class="form-container">
-                                <div class="form-group"> 
-                                    <label for="exampleInputEmail mb-2">Usuario</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="User">
-                                    <small id="emailHelp" class="form-text text-muted">Tu informacion es confidencial</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword mt-2">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck">
-                                    <label class="form-check-label" for="exampleCheck">Mantener la sesión iniciada</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block mt-2">Ingresar</button>
-                            </form>
-                        </section>
+                    <section class="card card-border w-52 col align-self-center mb-3 mt-3 me-3 ms-3">
+                        <form class="form-container">
+                            <div class="form-group"> 
+                                <label for="exampleInputEmail mb-2">Usuario</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="User">
+                                <small id="emailHelp" class="form-text text-muted">Tu informacion es confidencial</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword mt-2">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck">
+                                <label class="form-check-label" for="exampleCheck">Mantener la sesión iniciada</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mt-2">Ingresar</button>
+                        </form>
                     </section>
 
-
-                    </div>
-                </div>
                 
             
             </div>
