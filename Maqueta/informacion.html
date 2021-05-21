@@ -1,267 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Servicio de Tokenización para comercios</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" />
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    </head>
-
-    <body></body>
-    <!-- START NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-rom" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-5 col-7" href="#">
-                <img src="img/ESCOM_1.png" alt="" width="100">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+<body>
+        <!-- START NAVBAR-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-rom" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5 col-7" href="#">
+                    <img src="img/ESCOM_1.png" alt="" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active bi-house" aria-current="page" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link bi-info-circle" href="informacion.html">Información</a></li>
-                    <li class="nav-item"><a class="nav-link bi-journal" href="formulario.html">Registro</a></li>
-                    <li class="nav-item"><a class="nav-link bi-door-open" href="ingresar.html">Ingresar</a></li>
-                    <li class="nav-item"><a class="nav-link bi-plus" href="catalogoServicio.html">Más</a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active bi-house" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link bi-info-circle" href="informacion.html">Información</a></li>
+                        <li class="nav-item"><a class="nav-link bi-journal" href="formulario.html">Registro</a></li>
+                        <li class="nav-item"><a class="nav-link bi-door-open" href="ingresar.html">Ingresar</a></li>
+                        <li class="nav-item"><a class="nav-link bi-plus" href="catalogoServicio.html">Más</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav> <!-- END NAVBAR-->
+
+        <div id="separator-ribbon">
+            <div class="content bg-sec"></div>
         </div>
-    </nav> <!-- END NAVBAR-->
 
-    <div id="separator-ribbon">
-        <div class="content bg-sec"></div>
-    </div>
+        <!-- START CENTRO-->
+        <div id="games">
+            <div class="container-md p-5">
+              
+                <div class="row pt-5">
+                    <h3 class="text-center pb-5 pt-5 h1">¿Qué ofrece nuestro servicio de Tokenización?</h3>
+                </div>
+      
+                <div class="row bg-dark">
 
-    <!-- FORMULARIO-->
-            <section class="panel ">
-                <header class="h4 mb-auto mt-3 text-center text-white panel-heading bi-clipboard-data">
-                    Registrar Clientes
-                </header>
-                
-                <div class="panel-body ms-6 col-sm-11">
-                    <form class="form-horizontal " method="get">
-
-                        <div class="mb-3 mt-2 form-group">
-                            <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
-                        </div>
-                
-                    <div class="mb-3 mt-4 form-group ">
-                        <label class="col-sm-2 text-white control-label">Nombre de Usuario*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Coloque el Nombre de Usuario que desea tener" disabled>
-                        </div>
-                    </div>
-                
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">RFC*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Coloque los caracteres alfanuméricos de su RFC" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group ">
-                        <label class="col-sm-2 text-white control-label">Correo electrónico*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="correo@dominio.tipo / correo@proveedor.tipo.país" disabled>
-                        </div>
-                    </div>
-                    <div class="mb-3 form-group ">
-                        <label class="col-sm-1 text-white control-label">Contraseña*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Mínimo 8 caracteres alfanuméricos" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-4 form-group ">
-                        <label class="col-sm-1 text-white control-label">Contraseña*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Coloque la misma la Contraseña que indicó en el campo anterior" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-5 form-group"> 
-                        <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Registrarse </button>
-                            </div>  
+                    <div class="col-sm">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="icons/credit-card-fill.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Si tus clientes hacen pagos con su tarjeta bancaria.</p>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="mb-3 form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Dirección</label>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Estado*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Estado" disabled>
+                    <div class="col-sm">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="icons/shop.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Tu comercio deberá tener en cuenta mantener los datos bancarios seguros.</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-2 text-white control-label">Delegación o Municipio*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Delegación / Municipio" disabled>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-2 text-white control-label">Código Postal*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="C.P." disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Calle*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Calle" disabled>
-                        </div>
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Número*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Número" disabled>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-5 form-group">
-                        <label class="col-xl-8 text-center text-white control-label">Tipo de Cliente</label>
-                        <div class="row align-items-center"> 
-                            <div class="col-xl-8 text-center">
-                                <div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button" class="text-muted btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Seleccione el Tipo de Cliente
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                        <a class="dropdown-item" href="#">Comercio</a>
-                                        <a class="dropdown-item" href="#">Persona</a>
-                                    </div>
-                                </div>
+                
+                    <div class="col-sm">
+                        <div class="card w-100 card-border mb-5">
+                            <img src="icons/lock.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Con ayuda de primitivas criptograficas esos datos pueden ser reemplazados por un valor llamado token que no revela información sensible.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Comercio</label>
-                    </div>
-
-                    <div class="mb-2 form-group">
-                        <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-7 text-white control-label">Nombre del Comercio*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Nombre del Comercio" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Régimen*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Régimen" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-2 text-white control-label">Razón social*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Nombre de la empresa" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-4 form-group">
-                        <label class="col-sm-1 text-white control-label">Sucursal*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Sucursal de la empresa" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-5 form-group"> 
-                        <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Concluir Registro </button>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="mt-3 form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Persona</label>
-                    </div>
-                    <div class="mb-2 form-group">
-                        <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
-                    </div>
-                
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-3 text-white control-label">Primer Nombre*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Primer Nombre" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-3 text-white control-label">Segundo Nombre</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Segundo Nombre" disabled>
-                        </div>
-                    </div>
-                
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-3 text-white control-label">Apellido Paterno*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Apellido Paterno" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-4 form-group">
-                        <label class="col-sm-3 text-white control-label">Apellido Materno*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Apellido Materno" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-5 mt-2 form-group"> 
-                        <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Concluir Registro </button>
-                            </div>  
-                        </div>
-                    </div>
-            
-                    </form>
                 </div>
-            </section>
-<!-- CLIENTES-->
+      
+                <div class="row py-5">
 
-    <div id="separator-ribbon2">
-        <div class="content bg-sec"></div>
-    </div>
+                    <div class="col">
+                        <h3 class="text-center">Más información acerca de Tokenización</h3>
+                    </div>
 
-    <!-- START PIE DE PÁGINA-->
-    <div id="footer" class="p-1">
-      <div class="container w-50 pt-5">
-          <div class="row row-cols-md-2 justify-content-md-center">
-              <div class="col text-center">
-                  <a href="#">
-                      <button class="btn btn-lg rounded-pill btn-secondary w-100  p-3 shadow-sm font-weight-bold">Atención a clientes</button>
-                  </a>
-              </div>
-          </div>
-          <div class="row justify-content-md-center py-5">
-              <div class="col text-center font-weight-bold text-white"style="font: 1em sans-serif">
-                  <p>Instituto Politécnico Nacional.</p>
-                  <p>Escuela Superior de Cómputo</p>
-                  <button type="button" class="btn btn-outline-light bi-twitter"></button>
-                  <button type="button" class="btn btn-outline-light bi-facebook"></button>
-                  <button type="button" class="btn btn-outline-light bi-github"></button>
-                  <p>© 2020 - 2021.</p>
-              </div>
-          </div>
-          <div class="row"></div>
-      </div>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-2"><a href="#">PCI DSS</a></div>
+                    <div class="col-2"><a href="#">PCI SSC</a></div>
+                    <div class="col-1"><a href="#">X</a></div>
+                    <div class="col-1"><a href="#">X</a></div>
+                    <div class="col-1"><a href="#">X</a></div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- END CENTRO-->
+    
+        <div id="separator-ribbon2">
+            <div class="content bg-sec"></div>
+        </div>
+
+        <!-- START PIE DE PÁGINA-->
+        <div id="footer" class="p-1">
+            <div class="container w-50 pt-5">
+                <div class="row row-cols-md-2 justify-content-md-center">
+                    <div class="col text-center">
+                        <a href="#">
+                            <button class="btn btn-lg rounded-pill btn-secondary w-100  p-3 shadow-sm font-weight-bold">Atención a clientes</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center py-5">
+                    <div class="col text-center font-weight-bold text-white"style="font: 1em sans-serif">
+                        <p>Instituto Politécnico Nacional.</p>
+                        <p>Escuela Superior de Cómputo</p>
+                        <button type="button" class="btn btn-outline-light bi-twitter"></button>
+                        <button type="button" class="btn btn-outline-light bi-facebook"></button>
+                        <button type="button" class="btn btn-outline-light bi-github"></button>
+                        <p>© 2020 - 2021.</p>
+                    </div>
+                </div>
+                <div class="row"></div>
+            </div>
+        </div>    <!-- END PIE DE PÁGINA-->
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/popper.min.js" ></script>
+    
+</body>
+</html>
