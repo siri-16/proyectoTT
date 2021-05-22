@@ -57,3 +57,6 @@
 .card-border:hover{
     transform: scale(1.05);
 }
+.select-selected {
+    background-color: DodgerBlue;
+  }
