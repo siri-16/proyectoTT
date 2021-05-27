@@ -48,184 +48,403 @@
                     <form class="form-horizontal " method="get">
 
                         <div class="mb-3 mt-2 form-group">
+                            <label class="h4 col-xl-8 text-center text-white control-label">FORMULARIO 1: Pasado</label>
+                        </div>
+                        <div class="mb-3 mt-2 form-group">
                             <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
                         </div>
                 
-                    <div class="mb-3 mt-4 form-group ">
-                        <label class="col-sm-2 text-white control-label">Nombre de Usuario*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Coloque el Nombre de Usuario que desea tener" disabled>
+                        <div class="mb-3 mt-4 form-group ">
+                            <label class="col-sm-2 text-white control-label">Nombre de Usuario*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Coloque el Nombre de Usuario que desea tener" disabled>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">RFC*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Coloque los caracteres alfanuméricos de su RFC" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group ">
-                        <label class="col-sm-2 text-white control-label">Correo electrónico*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="correo@dominio.tipo / correo@proveedor.tipo.país" disabled>
-                        </div>
-                    </div>
-                    <div class="mb-3 form-group ">
-                        <label class="col-sm-1 text-white control-label">Contraseña*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Mínimo 8 caracteres alfanuméricos" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-4 form-group ">
-                        <label class="col-sm-1 text-white control-label">Contraseña*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Coloque la misma la Contraseña que indicó en el campo anterior" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Dirección</label>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Estado*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Estado" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-2 text-white control-label">Delegación o Municipio*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Delegación / Municipio" disabled>
-                        </div>
-                    </div>
                     
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-2 text-white control-label">Código Postal*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="C.P." disabled>
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-1 text-white control-label">RFC*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Coloque los caracteres alfanuméricos de su RFC" disabled>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Calle*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Calle" disabled>
+                        <div class="mb-3 form-group ">
+                            <label class="col-sm-2 text-white control-label">Correo electrónico*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="correo@dominio.tipo / correo@proveedor.tipo.país" disabled>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Número*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Número" disabled>
+                        <div class="mb-3 form-group ">
+                            <label class="col-sm-1 text-white control-label">Contraseña*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Mínimo 8 caracteres alfanuméricos" disabled>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="mb-5 form-group">
-                        <label class="col-xl-8 text-center text-white control-label">Tipo de Cliente</label>
-                        <div class="row align-items-center"> 
-                            <div class="col-xl-8 text-center">
-                                <div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button" class="text-muted btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Seleccione el Tipo de Cliente
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                        <a class="dropdown-item" href="#">Comercio</a>
-                                        <a class="dropdown-item" href="#">Persona</a>
+
+                        <div class="mb-4 form-group ">
+                            <label class="col-sm-1 text-white control-label">Contraseña*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Coloque la misma la Contraseña que indicó en el campo anterior" disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label class="h5 col-xl-8 text-center text-white control-label">Dirección</label>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-1 text-white control-label">Estado*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Estado" disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-2 text-white control-label">Delegación o Municipio*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Delegación / Municipio" disabled>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-2 text-white control-label">Código Postal*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="C.P." disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-1 text-white control-label">Calle*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Calle" disabled>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-1 text-white control-label">Número*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Número" disabled>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-5 form-group">
+                            <label class="col-xl-8 text-center text-white control-label">Tipo de Cliente</label>
+                            <div class="row align-items-center"> 
+                                <div class="col-xl-8 text-center">
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop1" type="button" class="text-muted btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Seleccione el Tipo de Cliente
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <a class="dropdown-item" href="#">Comercio</a>
+                                            <a class="dropdown-item" href="#">Persona</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Comercio</label>
-                    </div>
-
-                    <div class="mb-2 form-group">
-                        <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-7 text-white control-label">Nombre del Comercio*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Nombre del Comercio" disabled>
+                        <div class="form-group">
+                            <label class="h5 col-xl-8 text-center text-white control-label">Comercio</label>
                         </div>
-                    </div>
 
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-1 text-white control-label">Régimen*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Régimen" disabled>
+                        <div class="mb-2 form-group">
+                            <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
                         </div>
-                    </div>
 
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-2 text-white control-label">Razón social*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Nombre de la empresa" disabled>
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-7 text-white control-label">Nombre del Comercio*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Nombre del Comercio" disabled>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mb-4 form-group">
-                        <label class="col-sm-1 text-white control-label">Sucursal*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Sucursal de la empresa" disabled>
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-1 text-white control-label">Régimen*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Régimen" disabled>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mb-5 form-group"> 
-                        <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Registrar </button>
-                            </div>  
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-2 text-white control-label">Razón social*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Nombre de la empresa" disabled>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mt-3 form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Persona</label>
-                    </div>
-                    <div class="mb-2 form-group">
-                        <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
-                    </div>
+
+                        <div class="mb-4 form-group">
+                            <label class="col-sm-1 text-white control-label">Sucursal*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Sucursal de la empresa" disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-5 form-group"> 
+                            <div class="row align-items-center">
+                                <div class="col-xl-8 text-center">
+                                    <button class="text-muted btn btn-light" href="#" role="button">Registrar </button>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="mt-3 form-group">
+                            <label class="h5 col-xl-8 text-center text-white control-label">Persona</label>
+                        </div>
+                        <div class="mb-2 form-group">
+                            <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                        </div>
+                    
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-3 text-white control-label">Primer Nombre*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Primer Nombre" disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-3 text-white control-label">Segundo Nombre</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Segundo Nombre" disabled>
+                            </div>
+                        </div>
+                    
+                        <div class="mb-3 form-group">
+                            <label class="col-sm-3 text-white control-label">Apellido Paterno*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Apellido Paterno" disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 form-group">
+                            <label class="col-sm-3 text-white control-label">Apellido Materno*</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="disabledInput" type="text" placeholder="Apellido Materno" disabled>
+                            </div>
+                        </div>
+
+                        <div class="mb-5 mt-2 form-group"> 
+                            <div class="row align-items-center">
+                                <div class="col-xl-8 text-center">
+                                    <button class="text-muted btn btn-light" href="#" role="button">Registrar </button>
+                                </div>  
+                            </div>
+                        </div>
+
+
+                        <!-- PRUEBA FORMULARIO DE JON_MIRCHA
+                            Letras y espacios en blanco: ^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$
+                            Letras y Números: ^[A-Za-z0-9_-\s]+$
+                            Números: 
+                            Caracteres especiales: 
+                            Correo: ^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$
+                            Comentarios: ^.{1,255}$
+                            
+                        -->
+
+                        <form class="contact-form">
+                            <div class="mb-3 mt-2 form-group">
+                                <label class="h4 col-xl-8 text-center text-white control-label">FORMULARIO 2: Más reciente</label>
+                            </div>
+                            <div class="mb-3 mt-2 form-group">
+                                <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Nombre de Usuario*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Nombre de Usuario" title="Nombre de Usuario solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">RFC*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su RFC" title="RFC solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Correo electrónico*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Correo electrónico" title="correo@dominio.tipo / correo@proveedor.tipo.país" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{12,50})$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Contraseña*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Contraseña" title="Contraseña solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Contraseña*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Repita su Contraseña" title="Contraseña solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-5 form-group">
+                                <label class="h5 col-xl-8 text-center text-white control-label">Dirección</label>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Estado*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Estado" title="Estado solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Delegación o Municipio*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Delegación / Municipio" title="Delegación / Municipio solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Código Postal*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su C.P." title="C.P. solo acepta números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Calle*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Calle" title="Calle solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Número*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Número" title="Número solo acepta números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-5 form-group">
+                                <label class="col-xl-8 text-center text-white control-label">Tipo de Cliente</label>
+                                <div class="row align-items-center"> 
+                                    <div class="col-xl-8 text-center">
+                                        <div class="btn-group" role="group">
+                                            <button id="btnGroupDrop1" type="button" class="text-muted btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Seleccione el Tipo de Cliente
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                <a class="dropdown-item" href="#">Comercio</a>
+                                                <a class="dropdown-item" href="#">Persona</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SE AGREGÓ 2/3
+
+                            <div class="container fluid">
+                                <br>
+                                <div class="row">
+                                    </div class="col-md-12">
+                                        <div class="btn-group">
+                                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                Tipo de Cliente <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            END SE AGREGÓ 2/3-->
+
+
+                            <!-- PRUEBA COLLAPSE
+
+                            <p>
+                                <a class="btn btn-light text-muted" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Link with href
+                                </a>
+                                <button class="btn btn-light text-muted" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Button with data-target
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </div>
+
+                            END PRUEBA COLLAPSE-->
+
+
+                            <div class="form-group">
+                                <label class="h5 col-xl-8 text-center text-white control-label">Comercio</label>
+                            </div>
+                            <div class="mb-2 form-group">
+                                <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Nombre del Comercio*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Nombre del Comercio" title="Nombre del Comercio acepta letras, números y caracteres especiales" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Régimen*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Régimen" title="Régimen solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Razón social*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Razón social" title="Razón social solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Sucursal*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Sucursal" title="Sucursal solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+
+
+                            <div class="mt-5 form-group">
+                                <label class="h5 col-xl-8 text-center text-white control-label">Persona</label>
+                            </div>
+                            <div class="mb-2 form-group">
+                                <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Primer Nombre*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Primer Nombre" title="Primer Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Segundo Nombre*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Segundo Nombre" title="Segundo Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Apellido Paterno*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Apellido Paterno" title="Apellido Paterno solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-4 form-group ">
+                                <label class="col-sm-7 text-white control-label">Apellido Materno*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="name" placeholder="Escriba su Apellido Materno" title="Apellido Materno solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                </div>
+                            </div>
+
+
+
+                            <div class="mb-5 mt-2 form-group"> 
+                                <div class="row align-items-center">
+                                    <div class="col-xl-8 text-center">
+                                        <input class="text-muted btn btn-light" type="submit" value="Registrar">
+                                    </div>  
+                                </div>
+                            </div>
+                        </form>
+
+
                 
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-3 text-white control-label">Primer Nombre*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Primer Nombre" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-3 text-white control-label">Segundo Nombre</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Segundo Nombre" disabled>
-                        </div>
-                    </div>
-                
-                    <div class="mb-3 form-group">
-                        <label class="col-sm-3 text-white control-label">Apellido Paterno*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Apellido Paterno" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-4 form-group">
-                        <label class="col-sm-3 text-white control-label">Apellido Materno*</label>
-                        <div class="col-sm-8">
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Apellido Materno" disabled>
-                        </div>
-                    </div>
-
-                    <div class="mb-5 mt-2 form-group"> 
-                        <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Registrar </button>
-                            </div>  
-                        </div>
-                    </div>
-            
                     </form>
                 </div>
             </section>
