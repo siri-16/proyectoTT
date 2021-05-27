@@ -14,18 +14,17 @@
         <!-- END SE AGREGÓ 1/3-->
     </head>
 
-    <body></body>
+    <body>
+
     <!-- START NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-rom" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-orm" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand ms-5 col-7" href="#">
                 <img src="img/ESCOM_1.png" alt="" width="100">
             </a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link active bi-house" aria-current="page" href="index.html">Inicio</a></li>
@@ -38,21 +37,17 @@
         </div>
     </nav> <!-- END NAVBAR-->
 
-    <div id="separator-ribbon">
-        <div class="content bg-sec"></div>
-    </div>
-
     <!-- FORMULARIO-->
-            <section class="panel ">
-                <header class="h4 mb-auto mt-3 text-center text-white panel-heading bi-clipboard-data">
+            <section class="panel mt-6">
+                <header class="h4 mb-auto text-center text-white panel-heading bi-clipboard-data">
                     Registrar Clientes
                 </header>
                 
-                <div class="panel-body ms-6 col-sm-11">
+                <div class="panel-body ms-auto  col-sm-9">
                     <form class="form-horizontal " method="get">
 
                         <div class="mb-3 mt-2 form-group">
-                            <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                            <label class="h6 col-sm-8 text-center text-white control-label">*Campos obligatorios</label>
                         </div>
                 
                     <div class="mb-3 mt-4 form-group ">
@@ -90,7 +85,7 @@
                     </div>
 
                     <div class="mb-3 form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Dirección</label>
+                        <label class="h5 col-sm-8 text-center text-white control-label">Dirección</label>
                     </div>
 
                     <div class="mb-3 form-group">
@@ -128,9 +123,9 @@
                     </div>
                     
                     <div class="mb-5 form-group">
-                        <label class="col-xl-8 text-center text-white control-label">Tipo de Cliente</label>
+                        <label class="col-sm-2 text-center text-white control-label">Tipo de Cliente</label>
                         <div class="row align-items-center"> 
-                            <div class="col-xl-8 text-center">
+                            <div class="col-sm-8 text-center">
                                 <div class="btn-group" role="group">
                                     <button id="btnGroupDrop1" type="button" class="text-muted btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Seleccione el Tipo de Cliente
@@ -145,15 +140,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Comercio</label>
+                        <label class="h5 col-sm-8 text-center text-white control-label">Comercio</label>
                     </div>
 
                     <div class="mb-2 form-group">
-                        <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                        <label class="h6 col-sm-8 text-center text-white control-label">*Campos obligatorios</label>
                     </div>
 
                     <div class="mb-3 form-group">
-                        <label class="col-sm-7 text-white control-label">Nombre del Comercio*</label>
+                        <label class="col-sm-8 text-white control-label">Nombre del Comercio*</label>
                         <div class="col-sm-8">
                             <input class="form-control" id="disabledInput" type="text" placeholder="Nombre del Comercio" disabled>
                         </div>
@@ -182,16 +177,16 @@
 
                     <div class="mb-5 form-group"> 
                         <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Registrar </button>
+                            <div class="col-sm-8 text-center">
+                                <button class="btn btn-lg text-muted rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button">Registrar </button>
                             </div>  
                         </div>
                     </div>
                     <div class="mt-3 form-group">
-                        <label class="h5 col-xl-8 text-center text-white control-label">Persona</label>
+                        <label class="h5 col-sm-8 text-center text-white control-label">Persona</label>
                     </div>
                     <div class="mb-2 form-group">
-                        <label class="h6 col-xl-8 text-center text-white control-label">*Campos obligatorios</label>
+                        <label class="h6 col-sm-8 text-center text-white control-label">*Campos obligatorios</label>
                     </div>
                 
                     <div class="mb-3 form-group">
@@ -224,8 +219,8 @@
 
                     <div class="mb-5 mt-2 form-group"> 
                         <div class="row align-items-center">
-                            <div class="col-xl-8 text-center">
-                                <button class="text-muted btn btn-light" href="#" role="button">Registrar </button>
+                            <div class="col-sm-8 text-center">
+                                <button class="btn btn-lg text-muted rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button">Registrar </button>
                             </div>  
                         </div>
                     </div>
@@ -471,7 +466,7 @@
                   <p>Instituto Politécnico Nacional.</p>
                   <p>Escuela Superior de Cómputo</p>
                   <button type="button" class="btn btn-outline-light bi-twitter"></button>
-                  <button type="button" class="btn btn-outline-light bi-facebook"></button>
+                  <button type="button" class="btn btn-outline-light bi-envelope"></button>
                   <button type="button" class="btn btn-outline-light bi-github"></button>
                   <p>© 2020 - 2021.</p>
               </div>
@@ -479,3 +474,5 @@
           <div class="row"></div>
       </div>
   </div>    <!-- END PIE DE PÁGINA-->
+</body>
+</html>
