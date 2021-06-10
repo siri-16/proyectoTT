@@ -50,7 +50,7 @@
                             <label class="h6 col-sm-8 text-center text-white control-label">*Campos obligatorios</label>
                         </div>
                                     
-                        <!-- PRUEBA FORMULARIO DE JON_MIRCHA
+                        <!--PRUEBA FORMULARIO
                             Letras y espacios en blanco: ^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$
                             Letras y Números: ^[A-Za-z0-9_-\s]+$
                             RFC: 
@@ -63,31 +63,31 @@
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Nombre de Usuario*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Nombre de Usuario" title="Nombre de Usuario solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtNombreUsuario" placeholder="Escriba su Nombre de Usuario" title="Nombre de Usuario solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">RFC*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su RFC" title="RFC solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtRfc" placeholder="Escriba su RFC" title="RFC solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Correo electrónico*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Correo electrónico" title="correo@dominio.tipo / correo@proveedor.tipo.país" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{12,50})$" required>
+                                <input class="form-control" type="text" name="name" id="txtEmail" placeholder="Escriba su Correo electrónico" title="correo@dominio.tipo / correo@proveedor.tipo.país" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{12,50})$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Contraseña*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Contraseña" title="Contraseña solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtContrasenia" placeholder="Escriba su Contraseña" title="Contraseña solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Contraseña*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Repita su Contraseña" title="Contraseña solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtContrasenia" placeholder="Repita su Contraseña" title="Contraseña solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-5 form-group">
@@ -96,31 +96,31 @@
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Estado*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Estado" title="Estado solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtEstado" placeholder="Escriba su Estado" title="Estado solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Delegación o Municipio*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Delegación / Municipio" title="Delegación / Municipio solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtDelegacionMunicipio" placeholder="Escriba su Delegación / Municipio" title="Delegación / Municipio solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Código Postal*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su C.P." title="C.P. solo acepta números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtCodigoPostal" placeholder="Escriba su C.P." title="C.P. solo acepta números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Calle*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Calle" title="Calle solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtCalle" placeholder="Escriba su Calle" title="Calle solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-5 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Número*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Número" title="Número solo acepta números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtNumero" placeholder="Escriba su Número" title="Número solo acepta números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
 
@@ -164,25 +164,25 @@
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Nombre del Comercio*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Nombre del Comercio" title="Nombre del Comercio acepta letras, números y caracteres especiales" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtNombreComercio" placeholder="Escriba su Nombre del Comercio" title="Nombre del Comercio acepta letras, números y caracteres especiales" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Régimen*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Régimen" title="Régimen solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="" placeholder="Escriba su Régimen" title="Régimen solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Razón social*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Razón social" title="Razón social solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="" placeholder="Escriba su Razón social" title="Razón social solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Sucursal*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Sucursal" title="Sucursal solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="" placeholder="Escriba su Sucursal" title="Sucursal solo acepta letras y números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
 
@@ -196,25 +196,25 @@
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Primer Nombre*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Primer Nombre" title="Primer Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtPrimerNombre" placeholder="Escriba su Primer Nombre" title="Primer Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Segundo Nombre*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Segundo Nombre" title="Segundo Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtSegundoNombre" placeholder="Escriba su Segundo Nombre" title="Segundo Nombre solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Apellido Paterno*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Apellido Paterno" title="Apellido Paterno solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtApellidoPaterno" placeholder="Escriba su Apellido Paterno" title="Apellido Paterno solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
                         <div class="mb-3 mt-4 form-group ">
                             <label class="col-sm-7 text-white control-label">Apellido Materno*</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" placeholder="Escriba su Apellido Materno" title="Apellido Materno solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input class="form-control" type="text" name="name" id="txtApellidoMaterno" placeholder="Escriba su Apellido Materno" title="Apellido Materno solo acepta letras" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                             </div>
                         </div>
 
