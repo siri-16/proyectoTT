@@ -1,8 +1,16 @@
-const formularioR = document.querySelector('#787' )
+const formularioR = document.querySelector('.Container')
 
-const url= 'localhost:8088/Tokenizer/Clientes/listar'
+const url= 'http://localhost:8088/Tokenizer/Clientes/listar'
 
 fetch(url)
 .then(res => res.json())
-.then(data=> console.log(data))
+.then(data=> {
+    data.forEach(Cliente=>{
+        console.log(Cliente.rfc)
+        const p = document.createElement('p')
+        p.innerHTML= Cliente.rfc
+        formularioR.appendChild(p)
+    });
+    console.log(data)
+})
 .catch(err => console.log(err))
