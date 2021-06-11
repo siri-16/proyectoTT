@@ -5,26 +5,30 @@ document.querySelector('#btnSaveCliente').addEventListener('click', saveCliente)
 drawClientesTable();
 
 function saveCliente(){
-	var sUsername = document.querySelector('#txtUsername').value,
-	    sRfc = document.querySelector('#txtRfc').value,
+	var sNombreComercio = document.querySelector('#txtNombreComercio').value,
+		sDescripcion = document.querySelector('#txtDescripcion').value,
+		sNull = document.querySelector('#txtNull').value,
+		sTrue = document.querySelector('#txtTrue').value,
+		sNull = document.querySelector('#txtNull').value,
+		sNull = document.querySelector('#txtNull').value,
+		sContrasenia = document.querySelector('#txtContrasenia').value,
 	    sEmail = document.querySelector('#txtEmail').value,
-	    sPass1 = document.querySelector('#txtPass1').value,
-	    sPass2 = document.querySelector('#txtPass2').value,
-	    sState = document.querySelector('#txtState').value,
-	    sDelomun = document.querySelector('#txtDelomun').value,
-	    sCalle = document.querySelector('#txtCalle').value,
-	    sNum = document.querySelector('#txtNum').value,
-	    sNamecom = document.querySelector('#txtNamecom').value,
-	    sReg = document.querySelector('#txtReg').value,
-	    sRazsoc = document.querySelector('#txtRazsoc').value,
-	    sSuc = document.querySelector('#txtSuc').value,
-	    sName1 = document.querySelector('#txtName1').value,
-	    sName2 = document.querySelector('#txtName2').value,
-	    sAppat = document.querySelector('#txtAppat').value,
-	    sApmat = document.querySelector('#txtApmat').value,
-
-
-	addClienteToSystem(sUsername,sRfc,sEmail,sPass1,sPass2,sState,sDelomun, sCalle,sNum,sNamecom,sReg,sRazsoc,sSuc,sName1,sName2,sAppat,sApmat);
+		sNombreUsuario = document.querySelector('#txtNombreUsuario').value,
+		sRfc = document.querySelector('#txtRfc').value,
+		sApellidoMaterno = document.querySelector('#txtApellidoMaterno').value,
+		sApellidoPaterno = document.querySelector('#txtApellidoPaterno').value,
+		sPrimerNombre = document.querySelector('#txtPrimerNombre').value,
+		sSegundoNombre = document.querySelector('#txtSegundoNombre').value,
+		sCalle = document.querySelector('#txtCalle').value,
+		sCodigoPostal = document.querySelector('#txtCodigoPostal').value,
+		sDelegacionMunicipio = document.querySelector('#txtDelegacionMunicipio').value,
+		sDireccion = document.querySelector('#txtDireccion').value,
+		sRfc = document.querySelector('#txtRfc').value,
+	    sEstado = document.querySelector('#txtEstado').value,
+	    sNumero = document.querySelector('#txtNumero').value,
+		sNull = document.querySelector('#txtNull').value
+	
+	addClienteToSystem(snombreComercio, sdescripcion, null, true,  null, null, scontrasenia, semail, snombreUsuario, srfc, sapellidoMaterno, sapellidoPaterno, sprimerNombre, srfc, ssegundoNombre, scalle, scodigoPostal, sdelegacionMunicipio, sidDireccion, srfc, sestado, snumero, null);
 	drawClientesTable();
 }
 
@@ -36,60 +40,57 @@ function drawClientesTable(){
 	
 	for(var i = 0; i < list.length; i++){
 		var row = tbody.insertRow(i),
-			usernameCell = row.insertCell(0),
-			rfcCell = row.insertCell(1),
-			emailCell = row.insertCell(2),
-			pass1Cell = row.insertCell(3),
-			pass2Cell = row.insertCell(4),
-			stateCell = row.insertCell(5),
-			delomunCell = row.insertCell(6),
-			calleCell = row.insertCell(7),
-			numCell = row.insertCell(8),
-			namecomCell = row.insertCell(9),
-			regCell = row.insertCell(10),
-			razsocCell = row.insertCell(11),
-			name1Cell = row.insertCell(12),
-			name2Cell = row.insertCell(13),
-			appatCell = row.insertCell(14),
-			apmatCell = row.insertCell(15),
-			selectCell = row.insertCell(16);
-						
+			nombreComercioCell = row.insertCell(0),
+			descripcionCell = row.insertCell(1),
+			contraseniaCell = row.insertCell(2),
+			emailCell = row.insertCell(3),
+			nombreUsuarioCell = row.insertCell(4),
+			rfcCell = row.insertCell(5),
+			apellidoMaterno = row.insertCell(6),
+			apellidoPaterno = row.insertCell(7),
+			primerNombre = row.insertCell(8),
+			rfcCell = row.insertCell(9),
+			segundoNombre = row.insertCell(10),
+			calle = row.insertCell(11),
+			codigoPostal = row.insertCell(12),
+			delegacionMunicipio = row.insertCell(13),
+			idDireccion = row.insertCell(14),
+			rfcCell = row.insertCell(14),
+			estado = row.insertCell(15),
+			numero = row.insertCell(16),
 			
-			usernameCell.innerHTML = list[i].username;
-			rfcCell.innerHTML = list[i].rfc; 
-			emailCell.innerHTML = list[i].email; 
-			pass1Cell.innerHTML = list[i].pass1; 
-			pass2Cell.innerHTML = list[i].pass2; 
-			stateCell.innerHTML = list[i].state; 
-			delomunCell.innerHTML = list[i].delomun; 
-			numCell.innerHTML = list[i].num; 
-			namecomCell.innerHTML = list[i].namecom; 
-			regCell.innerHTML = list[i].reg;
-			razsocCell.innerHTML = list[i].razsoc; 
-			name1Cell.innerHTML = list[i].name1; 
-			name2Cell.innerHTML = list[i].name2; 
-			appatCell.innerHTML = list[i].appat; 
-			apmatCell.innerHTML = list[i].apmat; 
-			
-			
-			var inputSelect = documento.createELement('input');
+			nombreComercioCell.innerHTML = list[i].username;
+			descripcionCell.innerHTML = list[i].descripcion;
+			contraseniaCell.innerHTML = list[i].contrasenia;
+			emailCell.innerHTML = list[i].email;
+			nombreUsuarioCell.innerHTML = list[i].username;
+			rfcCell.innerHTML = list[i].rfc;
+			apellidoMaternoCell.innerHTML = list[i].apellidoMaterno;
+			apellidoPaternoCell.innerHTML = list[i].apellidoPaterno;
+			primerNombreCell.innerHTML = list[i].primerNombre;
+			rfcCell.innerHTML = list[i].rfc;
+			segundoNombreCell.innerHTML = list[i].segundoNombre;
+			calleCell.innerHTML = list[i].calle;
+			codigoPostalCell.innerHTML = list[i].codigoPostal;
+			delegacionMunicipioCell.innerHTML = list[i].delegacionMunicipio;
+			idDireccionCell.innerHTML = list[i].idDireccion;
+			rfcCell.innerHTML = list[i].rfc;
+			estadoCell.innerHTML = list[i].estado;
+			numeroCell.innerHTML = list[i].numero;
+								
+			var inputSelect = documento.createElement('input');
 			inputSelect.type = 'radio';
-			inputSelect.value = list[i].username;
+			inputSelect.value = list[i].nombreUsuario;
 			selectCell.appendChild(inputSelect);
-		
 		
 			tbody.appendChild(row);
 	}
-
 }
-
-
-
 
 
 //Cambios en index.html
 //id="
-btnSaveCliente
+//btnSaveCliente
 //"
-<script src="js/businessLogic.js"></script>
-<script src="js/uiLogic.js"></script>
+//<script src="js/businessLogic.js"></script>
+//<script src="js/uiLogic.js"></script>

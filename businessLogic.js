@@ -1,75 +1,79 @@
 //bussinesLogic.js
 //informacion de los objetos y funcionalidades propias del registro
 
-var clienteList = [];
+//var persona = [];
+//var comercio = [];
+//var servicioList = [];
+//var tokenPANList = [];
+//var tokenPANPK = [];
+//var usuarioList = [];
+//var direccionList = [];
 
-function addClienteToSystem(pnombreComercio, pdescripcion, null, true,  null, null, pcontrasenia, pemail, pnombreUsuario, prfc, papellidoMaterno, papellidoPaterno, pprimerNombre, prfc, psegundoNombre, palgoritmo, pcifrado, pcontrato, pcostoServicioAnual, pdescripcion, null, null, true, pnumeroContrato, prfc, ptipoServicio,  pcalle, pcodigoPostal, pdelegacionMunicicpio, pidDireccion, prfc, pestado, pnumero, null){
+function addClienteToSystem(pnombreComercio, pdescripcion, pcontrasenia, pemail, pnombreUsuario, prfc, papellidoMaterno, papellidoPaterno, pprimerNombre, prfc, psegundoNombre, palgoritmo, pcifrado, pcontrato, pcostoServicioAnual, pdescripcion, pnumeroContrato, prfc, ptipoServicio,  pcalle, pcodigoPostal, pdelegacionMunicipio, pidDireccion, prfc, pestado, pnumero){
 
 	var newCliente = {
-		var newComercio = {
-		nombreComercio : pnombreComercio,
-		descripcion : pdescripcion,
-		fechaCreacion : null,
-		habilitado : true,
-		fechaAcualizacion :  null;
-		
-		var tokenPANlist : null,
-		
-		var usuarioList = {
-			contrasenia : pcontrasenia,
-			email : pemail,
-			usuarioPK : {
-				nombreUsuario : pnombreUsuario,
-				rfc : prfc
-		 
+		newComercio = {
+			nombreComercio : pnombreComercio,
+			descripcion : pdescripcion,
+			fechaCreacion : null,
+			habilitado : true,
+			fechaAcualizacion : null
 		},
 		
-		var newPersona = {
-		apellidoMaterno : papellidoMaterno,
-		apellidoPaterno : papellidoPaterno,
-		primerNombre : pprimerNombre,
-		rfc : prfc,
-		segundoNombre : psegundoNombre
-		
-		var servicioList = {
-		algoritmo : palgoritmo,
-		cifrado : pcifrado,
-		contrato : pcontrato,
-		costoServicioAnual : pcostoServicioAnual,
-		descripcion : pdescripcion,
-		fechaAcualizacion :  null;
-		fechaCreacion : null,
-		habilitado : true,
-		servicioPK = {
-			numeroContrato : pnumeroContrato,
-			rfc : prfc
-		
-		
-		tipoServicio : ptipoServicio
-		
-		
-		var direccionList = {
-		calle : pcalle,
-		codigoPostal : pcodigoPostal
-		delegacionMunicicpio : pdelegacionMunicicpio
-		direccionPK = {
-			idDireccion : pidDireccion,
-			rfc : prfc
-		estado : pestado,
-		numero : pnumero
-				
-		comercio : null
-						
-	};
+		TokenPANList: [
+			{
+				fechaActualizacion: null,
+				fechaCreacion: null,
+				token0: null,
+				tokenPANPK: {
+					pan: null,
+					rfc: null
+				},
+				vigencia : null
+			}
+		],
+
+			
+		newUsuario = [
+			{
+				contrasenia : pcontrasenia,
+				email : pemail,
+
+				newUsuarioPK = {
+					nombreUsuario : pnombreUsuario,
+					rfc : prfc
+				}
+			}			
+		],
+			
+		newPersona = {
+			apellidoMaterno : papellidoMaterno,
+			apellidoPaterno : papellidoPaterno,
+			primerNombre : pprimerNombre,
+			rfc : prfc,
+			segundoNombre : psegundoNombre
+		},
+			
+		direccionList = [
+			{
+				calle : pcalle,
+				codigoPostal : pcodigoPostal,
+				delegacionMunicipio : pdelegacionMunicipio,
+				direccionPK = {
+					idDireccion : pidDireccion,
+					rfc : prfc
+				},
+				estado : pestado,
+				numero : pnumero,
+				comercio : null	
+			}
+		]	
+	}
+
 	console.log(newCliente);
 	clienteList.push(newCliente);
 }
 
-
-function getClientesList){
+function getClientesList(){
 	return clientesList;
 }
-
-
-
-
