@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.tc div').hide();
         $(SelectValue).toggle();
         const button = document.getElementById('uno');
-        button.show();
+        //button.show();
         $('.1').children('selectValor').show();
     });
 });
