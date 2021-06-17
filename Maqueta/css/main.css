@@ -57,3 +57,5 @@
 .card-border:hover{
     transform: scale(1.05);
 }
+
+.Div1,.Div2{display:none;}
