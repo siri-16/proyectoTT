@@ -42,8 +42,7 @@ function saveCliente(){
                 null,
                 null
             );
-        }
-        if(sPrimerNombre === null){
+        }else{
             addClienteToSystem(
                 sNombreUsuario, 
                 sRfc, 
