@@ -41,18 +41,18 @@
         <div class="container-md p-5 mt-6">
           
             <div class="row pt-8">
-                <h4 class="mb-auto mt-2 text-center text-white bi-clipboard-data">Ingresar</h4>
+                <h4 class="mb-auto mt-2 text-center text-white bi-shop-window">Ingresar</h4>
             </div>
             <div class="row mx-auto w-50 bg-dark mt-2">
                     <section class="card card-border w-52 col align-self-center mb-3 mt-3 me-3 ms-3">
                         <form class="form-container">
                             <div class="form-group"> 
                                 <label class="mb-2">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="exampleInputUser" aria-describedby="emailHelp" placeholder="Nombre de Usuario" title="Nombre de Usuario acepta letras, números y caracteres especiales" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input type="text" class="form-control" id="exampleInputUser" aria-describedby="emailHelp" placeholder="Nombre de Usuario" title="Nombre de Usuario acepta letras, numeros, guión y guión bajo" pattern="^[a-zA-Z0-9\_\-]{4,16}$" required>
                             </div>
                             <div class="form-group mt-2 mb-2">
                                 <label class="mt-2">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword" placeholder="Contraseña" title="Contraseña acepta letras, números y caracteres especiales" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                <input type="password" class="form-control" id="exampleInputPassword" placeholder="Contraseña" title="Acepta al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter especial" pattern="^(?=(?:.*\d){1})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})(?=(?:.*[@$?¡\-_]){1})\S{8,15}$" required>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block mt-2" id="buttonIngreso">Ingresar</button>
                         </form>
