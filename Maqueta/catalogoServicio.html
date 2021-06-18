@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <script src="js/bootstrap.min.js" ></script>
-    <script src="js/popper.min.js" ></script>   
+    <script src="js/popper.min.js" ></script>
+    <script src="js/catalogoBL.js" ></script>
 </head>
 <body>    
     
@@ -47,29 +48,32 @@
                 <form class="row gy-2 gx-2 align-items-center">
                 
                     <label class="col-sm-6 text-white control-label">Algoritmo</label>
-                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-                        <option selected>TKR2</option>
-                        <option value="1">FFX A10</option>
-                        <option value="2">DBRG</option>
-                        <option value="3">BPS</option>
+                    <select id="opAlgoritmo" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>Seleccionar</option>
+                        <option id="1al" value="1">FFX A10</option>
+                        <option id="2al" value="2">DBRG</option>
+                        <option id="3al" value="3">BPS</option>
+                        <option id="4al" value="4">TKR2</option>
                     </select>
 
-                    <label class="col-sm-6 text-white control-label">Cifrado</label>
-                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-                        <option selected>Sí</option>
-                        <option value="1">No</option>
+                    <label class="col-sm-6 text-white control-label">Cifrado en Base de datos</label>
+                    <select id="opCifrado" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>Seleccionar</option>
+                        <option id="1ci" value="1">Sí</option>
+                        <option value="2ci">No</option>
                     </select>
                 
                     <label class="col-sm-6 text-white control-label">Periodo</label>
-                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-                        <option selected>1 año</option>
-                        <option value="1">2 años</option>
-                        <option value="2">3 años</option>
-                        <option value="3">4 años</option>
+                    <select id="opPeriodo"  class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>Seleccionar</option>
+                        <option id="1pe" value="1">1 año</option>
+                        <option id="2pe" value="2">2 años</option>
+                        <option id="3pe" value="3">3 años</option>
+                        <option id="4pe" value="4">4 años</option>
                     </select>
             
                     <div class="ms-auto mx-auto mt-5 col-sm-6 text-center">
-                        <button class=" btn btn-lg rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button">Mostrar información seleccionada </button>
+                        <button class=" btn btn-lg rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button" id="buttonShowInfo">Mostrar información seleccionada </button>
                     </div>
                 </form>
             </div>
@@ -80,7 +84,7 @@
             <table class="table table-success table-striped text-center">
                 <tr class="table-primary sm">
                     <td class="table-primary col-sm-8">Algortimo</td>
-                    <td class="table-primary col-sm-8">TKR2</td>
+                    <td id="talgoritmo" class="table-primary col-sm-8"> </td>
                 </tr>
                 <tr class="table-light">
                     <td class="table-light col-sm-8"></td>
@@ -88,7 +92,7 @@
                 </tr>
                 <tr class="table-primary">
                     <td class="table-primary col-sm-8">Cifrado</td>
-                    <td class="table-primary col-sm-8">Sí</td>
+                    <td id="tcifrado" class="table-primary col-sm-8"> </td>
                 </tr>
                 <tr class="table-light">
                     <td class="table-light col-sm-8"></td>
@@ -96,7 +100,7 @@
                 </tr>
                 <tr class="table-primary">
                     <td class="table-primary col-sm-8">Periodo</td>
-                    <td class="table-primary col-sm-8">1 año</td>
+                    <td id="tperiodo" class="table-primary col-sm-8">1 año</td>
                 </tr>
                 <tr class="table-light">
                     <td class="table-light col-sm-8"></td>
@@ -104,11 +108,11 @@
                 </tr>
                 <tr class="table-primary">
                     <td class="table-primary col-sm-8">Costo</td>
-                    <td class="table-primary col-sm-8">$30,000.00</td>
+                    <td id="tcosto" class="table-primary col-sm-8">$30,000.00</td>
                 </tr>
             </table>
             <div class="ms-auto mx-auto mt-5 col-sm-6 text-center">
-                <button class=" btn btn-lg rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button">Contratar </button>
+                <button class=" btn btn-lg rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button" id="buttonContratar">Contratar </button>
             </div>
         </div>
          <!-- END TABLA DE ELECCIONES-->
@@ -137,5 +141,6 @@
                 <div class="row"></div>
             </div>
         </div>    <!-- END PIE DE PÁGINA-->
+        <script src="js/catalogoUILogic.js" ></script>
 </body>
 </html>
