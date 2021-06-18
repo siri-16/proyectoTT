@@ -64,5 +64,5 @@ function saveCliente(){
             );
         }
         alert("usuario registrado");        
-        window.location="index.html";
+        window.location="indexUsuario.html";
 }

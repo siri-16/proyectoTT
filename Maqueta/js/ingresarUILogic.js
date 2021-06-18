@@ -4,4 +4,7 @@ function verificarUC(){
     var sNombreUsuario = document.querySelector('#exampleInputUser').value,
         sContrasenia = document.querySelector('#exampleInputPassword').value
         consultarUsuario(sNombreUsuario, sContrasenia);
+
+        alert("¡Ingreso exitoso!");        
+        window.location="indexUsuario.html";
 }
