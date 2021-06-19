@@ -2,9 +2,11 @@ const compra = new Carrito();
 const listaCompra = document.querySelector("#lista-compra tbody");
 const carrito = document.getElementById('carrito');
 const procesarCompraBtn = document.getElementById('procesar-compra');
-const cliente = document.getElementById('cliente');
-const correo = document.getElementById('correo');
-
+const clienteComprador = document.getElementById('txtClienteComprador');
+const correoClienteComprador = document.getElementById('txtCorreoClienteComprador');
+const pan = document.getElementById('txtPAN');
+const cvv = document.getElementById('txtCVV');
+const vigencia = document.getElementById('txtVigencia');
 
 cargarEventos();
 
@@ -38,7 +40,7 @@ function procesarCompra() {
             window.location = "index.html";
         })
     }
-    else if (cliente.value === '' || correo.value === '') {
+    else if (clienteComprador.value === '' || correoClienteComprador.value === '') {
         Swal.fire({
             type: 'error',
             title: 'Oops...',
@@ -95,3 +97,36 @@ function procesarCompra() {
     }
 }
 
+//SIMILAR A FormularioUILogic.js
+document.querySelector('#procesar-compra').addEventListener('click', procesarToken) 
+
+function procesarToken(){
+//fecha de compra con funcion en javascript que genere aleatoriamente
+		var sIdtransaccion= Math.random(); //generarlo con funcion aleatoria
+		var sIdPedido= sIdtransaccion; //generarlo con funcion aleatoria
+		var sFechaCompra= new Date(); //generarlo con funcion aleatoria
+        var sFechaActualizacion= sFechaCompra;
+        var sFechaCreacion= sFechaCompra;
+ 
+    solicitarToken(
+        sPan,
+        null, //rfc
+        sFechaActualizacion, //fecha_actualizacion
+        sFechaCreacion, //fecha_creacion
+        sIdTransaccion,
+        null,
+        null
+    )
+ 
+    addTransaccionToSystem(
+        sIdtransaccion, //IdTransaccion
+        sIdPedido, //
+        sFechaCompra,
+        sClienteComprador,
+        sCorreoClienteComprador,
+        null //token
+    );
+    alert("¡Compra exitosa!");        
+    window.location="index.html";
+ 
+}
