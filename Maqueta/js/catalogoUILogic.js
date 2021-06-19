@@ -1,39 +1,25 @@
-document.querySelector('#buttonShowInfo').addEventListener('click', mostrarInfo)
-document.querySelector('#buttonContratar').addEventListener('click', guardarServicio)
-
-function mostrarInfo(){
-    var opAlgoritmo = document.getElementById("opAlgoritmo").value,
+$(document).ready(function(){
+    $(".buttonShowInfo").click(function(){
+        var opAlgoritmo = document.getElementById("opAlgoritmo").value,
         opCifrado = document.getElementById("opCifrado").value,
         opPeriodo = document.getElementById("opPeriodo").value
-        
-    //const tablaA = document.createElement('tAlgoritmo')
-    //console.log(tablaA)
-    //tablaA.textContent= opAlgoritmo
 
-    const tcif = document.createElement('tCifrado')
-    tcif.innerHTML= opCifrado
-    document.getElementById("tcifrado").appendChild(tcif);
-}
+        var talg = document.createElement('talgoritmo')
+        talg.innerHTML= opAlgoritmo
+        document.getElementById("talgoritmo").appendChild(talg);
 
-function obtenerRFC(){
- //ObtenerUsuario
+        var tcif = document.createElement('tcifrado')
+        tcif.innerHTML= opCifrado
+        document.getElementById("tcifrado").appendChild(tcif);
 
- //GET
+        var tper = document.createElement('tperiodo')
+        tper.innerHTML= opPeriodo
+        document.getElementById("tperiodo").appendChild(tper);
 
-}
+        $(".tablaElecciones").slideToggle("slow");
+        //$(".tablaElecciones").toggle("slow");
+        return false;
+    });
+});
 
-function obtenerCosto(){}
-
-function guardarServicio(){
-	var opAlgoritmo = document.getElementById("opAlgoritmo").value,
-        opCifrado = document.getElementById("opCifrado").value,
-        opPeriodo = document.getElementById("opPeriodo").value
-            agregarServicioAUsuario(
-                opAlgoritmo,
-                opCifrado,
-                pcosto, //De función obtener costo
-                pdescripcion,
-                prfc, //De función obtener rfc
-                opPeriodo
-            );
-}
+//document.querySelector('#buttonContratar').addEventListener('click', guardarServicio)
