@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-        <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-        <script src="js/Javascript.js"></script>
         <script src="js/bootstrap.min.js" ></script>
         <script src="js/popper.min.js" ></script>
         
@@ -38,33 +36,37 @@
         </div>
     </nav> <!-- END NAVBAR-->
 
-    <!-- SESION INICIADA-->
-            <section class="panel mt-6">
-                <header class="h4 mb-auto text-center text-white panel-heading bi-credit-card-2-front">
-                    Sesión iniciada
-                </header>
-                
-                <div class="panel-body ms-auto  col-sm-9">
-                    <form class="form-horizontal " method="get">
-
-                        <div class="mb-3 mt-2 form-group">
-                            <label class="h6 col-sm-8 text-center text-white control-label">*Campos obligatorios</label>
-                        </div>
-                             
-                        <div class="mb-3 mt-4 form-group ">
-                            <label class="col-sm-7 text-white control-label">X*</label>
-                            <div class="col-sm-8">
-                                <input class="form-control" type="text" name="name" id="txtX" placeholder="X" title="X" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                            </div>
-                        </div>
-                                                
-                    </form>
+    <!-- START CARRUSEL-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide bg-rom mt-6 mb-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/Cry012.png" class="d-block w-75 mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white">
+                    <h5>Tokenización</h5>
+                    <p>Reemplazar valores de datos sensibles por valores aleatorios</p>
                 </div>
-                <div class="ms-auto mx-auto mt-5 mb-5 col-sm-8 text-center">
-                    <button class="btn btn-lg text-muted rounded-pill btn-light p-3 shadow-sm font-weight-bold" href="#" role="button"  id="buttonX">X </button>
-                </div>  
-            </section>
-    <!-- END SESION INICIADA-->
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="img/Cry013.png" class="d-block w-75 mx-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white">
+                    <h5>Seguridad para tus clientes</h5>
+                    <p>Sin datos sensibles de la tarjeta de pago expuestos</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>     <!-- END CARRUSEL-->
 
     <div id="separator-ribbon2">
         <div class="content bg-sec"></div>
@@ -91,10 +93,7 @@
               </div>
           </div>
           <div class="row"></div>
-      </div>
-  </div>    <!-- END PIE DE PÁGINA-->
-  <script src="js/FormularioBL.js" ></script>
-  <script src="js/FormularioUILogic.js" ></script>
- 
-</body>
+        </div>
+    </div>    <!-- END PIE DE PÁGINA-->
+    </body> 
 </html>
