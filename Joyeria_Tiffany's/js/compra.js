@@ -2,9 +2,9 @@ const compra = new Carrito();
 const listaCompra = document.querySelector("#lista-compra tbody");
 const carrito = document.getElementById('carrito');
 const procesarCompraBtn = document.getElementById('procesar-compra');
-const clienteComprador = document.getElementById('txtClienteComprador');
-const correoClienteComprador = document.getElementById('txtCorreoClienteComprador');
-const pan = document.getElementById('txtPAN');
+const sClienteComprador = document.getElementById('txtClienteComprador');
+const sCcorreoClienteComprador = document.getElementById('txtCorreoClienteComprador');
+const sPan = document.getElementById('txtPAN');
 const cvv = document.getElementById('txtCVV');
 const vigencia = document.getElementById('txtVigencia');
 
@@ -98,7 +98,7 @@ function procesarCompra() {
 }
 
 //SIMILAR A FormularioUILogic.js
-document.querySelector('#procesar-compra').addEventListener('click', procesarToken) 
+document.querySelector('#procesar-compra').addEventListener('click', procesarToken)
 
 function procesarToken(){
 //fecha de compra con funcion en javascript que genere aleatoriamente
@@ -107,6 +107,8 @@ function procesarToken(){
 		var sFechaCompra= new Date(); //generarlo con funcion aleatoria
         var sFechaActualizacion= sFechaCompra;
         var sFechaCreacion= sFechaCompra;
+        var sTotal= compra.calcularTotal();
+        var sNoArticulos= compra.obtenerProductosLocalStorage().length;
  
     solicitarToken(
         sPan,
@@ -119,12 +121,22 @@ function procesarToken(){
     )
  
     addTransaccionToSystem(
-        sIdtransaccion, //IdTransaccion
         sIdPedido, //
-        sFechaCompra,
-        sClienteComprador,
-        sCorreoClienteComprador,
-        null //token
+        sNoArticulos, //
+        sColor,
+        sCosto,
+        sDetalles,
+        sNombre,
+        sIdPedido, //
+        sIdProducto,
+        sTipo,
+        sTotal, //
+        sClienteComprador, //
+        sCorreoClienteComprador, //
+        sFechaCompra, //
+        sToken, 
+        sIdPedido, //
+        sIdTransaccion //
     );
     alert("¡Compra exitosa!");        
     window.location="index.html";

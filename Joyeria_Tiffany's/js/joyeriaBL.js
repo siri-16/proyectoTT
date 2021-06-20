@@ -1,5 +1,5 @@
-//const url= 'http://Servicio
-//const url= 'http://Tienda
+const urlServicio= 'http://localhost:8088/Tokenizer/Tokens/JTF836412700'
+const urlTienda= 'http://localhost:8077/Joyeria/Pedidos/'
 
     function solicitarToken(
         pPan,
@@ -28,28 +28,61 @@
             })
                 .then(res => res.json())
                 .then(data => console.log(data))
+            //regresar el token a donde fue llamada la funcion return data.token;
         }
 
      
     function addTransaccionToSystem(
-        pIdtransaccion, 
-        pIdPedido, 
-        pFechaCompra,
+        pIdPedido,
+        pNoArticulos,
+        pColor,
+        pCosto,
+        pDetalles,
+        pNombre,
+        pIdPedido,
+        pIdProducto,
+        pTipo,
+        pTotal,
         pClienteComprador,
         pCorreoClienteComprador,
-        pToken
+        pFechaCompra,
+        pToken,
+        pIdPedido,
+        pIdTransaccion
         ){
-            var nuevaTransaccion = {
-                "idtransaccion": pIdTransaccion,
+            var nuevaCompra = {
                 "idPedido": pIdPedido,
-                "fechaCompra": pFechaCompra,
-                "clienteComprador": pClienteComprador,
-                "correoClienteComprador": pCorreoClienteComprador,
-                "token": pToken
-            }
+                "noArticulos": pNoArticulos,
+                "productoList": [
+                  {
+                    "color": pColor,
+                    "costo": pCosto,
+                    "detalles": pDetalles,
+                    "nombre": pNombre,
+                    "productoPK": {
+                      "idPedido": pIdPedido,
+                      "idProducto": pIdProducto
+                    },
+                    "tipo": pTipo
+                  }
+                ],
+                "total": pTotal,
+                "transaccionList": [
+                  {
+                    "clienteComprador": pClienteComprador,
+                    "correoClienteComprador": pCorreoClienteComprador,
+                    "fechaDeCompra": pFechaCompra,
+                    "token": pToken,
+                    "transaccionPK": {
+                      "idPedido": pIdPedido,
+                      "idtransaccion": pIdTransaccion
+                    }
+                  }
+                ]
+              }
             fetch(urlTienda, {
                 method: 'POST',
-                body: JSON.stringify(nuevaTransaccion),
+                body: JSON.stringify(nuevaCompra),
                 headers: {
                     "Content-type": "application/json"
                 }

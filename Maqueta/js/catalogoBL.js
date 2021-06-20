@@ -1,6 +1,5 @@
-const url= 'http://localhost:8088/Tokenizer/Clientes//CODN100000MDF/Servicios'
-
-const urlU= ''
+var opRFC= document.getElementById("txtRfcConfirmada").value
+const url= 'http://localhost:8088/Tokenizer/Clientes/'+opRFC+'/Servicios'
 
     function agregarServicioAUsuario(
         palgoritmo,
@@ -38,5 +37,3 @@ const urlU= ''
             .then(data => console.log(data))
 
     }
-
-    function obtenerUsuario(){}

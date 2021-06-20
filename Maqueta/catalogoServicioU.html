@@ -45,6 +45,10 @@
             <div class="panel-body mx-auto ms-auto col-sm-6">
             
                 <form class="row gy-2 gx-2 align-items-center">
+                    
+                    <label class="col-sm-6 text-white control-label">RFC*</label>
+                    <input class="form-control" type="text" name="name" id="txtRfcConfirmada" placeholder="Confirme su RFC" title="RFC solo acepta letras y números" pattern="^([A-ZÑ\x26]{3,4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[A-Z|\d]{3})$" required>
+                    
                 
                     <label class="col-sm-6 text-white control-label">Algoritmo</label>
                     <select id="opAlgoritmo" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
