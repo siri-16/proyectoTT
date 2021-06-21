@@ -63,6 +63,6 @@ function saveCliente(){
                 sSucursal
             );
         }
-        alert("usuario registrado");        
-        window.location="indexUsuario.html";
+        alert("¡Registro exitoso!");        
+        window.location="index.html";
 }
