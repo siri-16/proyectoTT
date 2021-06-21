@@ -36,4 +36,6 @@ function guardarServicio(){
         opRFC,
         opPeriodo
     );
+    alert("¡Registro exitoso!");        
+    window.location="index.html";
 }
