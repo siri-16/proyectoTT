@@ -20,9 +20,11 @@ function saveCliente(){
         sPrimerNombre = document.querySelector('#txtPrimerNombre').value,
         sSegundoNombre = document.querySelector('#txtSegundoNombre').value,
         sApellidoPaterno = document.querySelector('#txtApellidoPaterno').value,
-        sApellidoMaterno = document.querySelector('#txtApellidoMaterno').value
+        sApellidoMaterno = document.querySelector('#txtApellidoMaterno').value,
+        combo = document.getElementById("select"),
+        selected = combo.options[combo.selectedIndex].text;
 
-        if(sNombreComercio == null){
+        if(selected==="Persona"){
             addClienteToSystem(
                 sNombreUsuario, 
                 sRfc, 

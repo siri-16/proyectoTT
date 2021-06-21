@@ -20,9 +20,9 @@ function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTran
         "Content-type": "application/json"
       }
     })
-      .then(res => res.json())
-      .then(dataa => {
-                    const datosRecibidosPorServidor = JSON.parse(dataa.data);
+      //.then(res => res.json())
+      .then(res => {
+                    const datosRecibidosPorServidor = JSON.parse(res.data);
                     return t = datosRecibidosPorServidor.token;
       });            //regresar el token a donde fue llamada la funcion return data.token;
 }

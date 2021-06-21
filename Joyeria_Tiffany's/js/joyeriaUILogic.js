@@ -25,7 +25,8 @@ function procesarToken(){
 }
  
 function guardarTransaccion(toke){
-    var sToken= '789654123010101',
+    //var sToken= '789654123010101',
+    var sToken= toke,
         sClienteComprador = document.querySelector('#txtClienteComprador').value,
         sCorreoClienteComprador = document.querySelector('#txtCorreoClienteComprador').value,
         sIdPedido= '000000000000000',
