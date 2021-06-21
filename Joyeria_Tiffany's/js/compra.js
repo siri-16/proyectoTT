@@ -2,11 +2,14 @@ const compra = new Carrito();
 const listaCompra = document.querySelector("#lista-compra tbody");
 const carrito = document.getElementById('carrito');
 const procesarCompraBtn = document.getElementById('procesar-compra');
-const sClienteComprador = document.getElementById('txtClienteComprador');
-const sCcorreoClienteComprador = document.getElementById('txtCorreoClienteComprador');
-const sPan = document.getElementById('txtPAN');
-const cvv = document.getElementById('txtCVV');
-const vigencia = document.getElementById('txtVigencia');
+const ClienteComprador = document.getElementById('txtClienteComprador');
+const CorreoClienteComprador = document.getElementById('txtCorreoClienteComprador');
+// var sPan = document.getElementById('txtPan').value
+// var scvv = document.getElementById('txtCvv').value
+// var svigencia = document.getElementById('txtVigencia').value
+// var sClienteComprador = document.getElementById('txtClienteComprador').value
+// var sCorreoClienteComprador = document.getElementById('txtCorreoClienteComprador').value
+// console.log('ClienteComprador'+sClienteComprador);
 
 cargarEventos();
 
@@ -40,7 +43,7 @@ function procesarCompra() {
             window.location = "index.html";
         })
     }
-    else if (clienteComprador.value === '' || correoClienteComprador.value === '') {
+    else if (ClienteComprador.value === '' || CorreoClienteComprador.value === '') {
         Swal.fire({
             type: 'error',
             title: 'Oops...',
@@ -95,50 +98,4 @@ function procesarCompra() {
         });
 
     }
-}
-
-//SIMILAR A FormularioUILogic.js
-document.querySelector('#procesar-compra').addEventListener('click', procesarToken)
-
-function procesarToken(){
-//fecha de compra con funcion en javascript que genere aleatoriamente
-		var sIdtransaccion= Math.random(); //generarlo con funcion aleatoria
-		var sIdPedido= sIdtransaccion; //generarlo con funcion aleatoria
-		var sFechaCompra= new Date(); //generarlo con funcion aleatoria
-        var sFechaActualizacion= sFechaCompra;
-        var sFechaCreacion= sFechaCompra;
-        var sTotal= compra.calcularTotal();
-        var sNoArticulos= compra.obtenerProductosLocalStorage().length;
- 
-    solicitarToken(
-        sPan,
-        null, //rfc
-        sFechaActualizacion, //fecha_actualizacion
-        sFechaCreacion, //fecha_creacion
-        sIdTransaccion,
-        null,
-        null
-    )
- 
-    addTransaccionToSystem(
-        sIdPedido, //
-        sNoArticulos, //
-        sColor,
-        sCosto,
-        sDetalles,
-        sNombre,
-        sIdPedido, //
-        sIdProducto,
-        sTipo,
-        sTotal, //
-        sClienteComprador, //
-        sCorreoClienteComprador, //
-        sFechaCompra, //
-        sToken, 
-        sIdPedido, //
-        sIdTransaccion //
-    );
-    alert("¡Compra exitosa!");        
-    window.location="index.html";
- 
 }
