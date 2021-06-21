@@ -12,7 +12,7 @@ function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTran
       },
       "vigencia": pVigencia
     }
-  
+    var t;
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(newTokenPAN),
@@ -21,6 +21,8 @@ function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTran
       }
     })
       .then(res => res.json())
-      .then(data => console.log(data))
-              //regresar el token a donde fue llamada la funcion return data.token;
+      .then(dataa => {
+                    const datosRecibidosPorServidor = JSON.parse(dataa.data);
+                    return t = datosRecibidosPorServidor.token;
+      });            //regresar el token a donde fue llamada la funcion return data.token;
 }

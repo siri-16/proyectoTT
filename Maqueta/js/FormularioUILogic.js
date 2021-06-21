@@ -22,7 +22,7 @@ function saveCliente(){
         sApellidoPaterno = document.querySelector('#txtApellidoPaterno').value,
         sApellidoMaterno = document.querySelector('#txtApellidoMaterno').value
 
-        if(sNombreComercio === null){
+        if(sNombreComercio == null){
             addClienteToSystem(
                 sNombreUsuario, 
                 sRfc, 
