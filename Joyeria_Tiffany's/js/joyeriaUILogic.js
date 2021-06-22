@@ -12,7 +12,7 @@ function procesarToken(){
         sFechaCreacion= sFechaCompra,
         sRFC= 'JTF836412700'
 
-    var toke= solicitarToken(
+    var token= solicitarToken(
                 sPan,
                 sRFC,
                 sFechaActualizacion, //fecha_actualizacion
@@ -21,7 +21,9 @@ function procesarToken(){
                 null,
                 null
     );
-    guardarTransaccion(toke);
+
+    guardarTransaccion(token);
+    
 }
  
 function guardarTransaccion(toke){

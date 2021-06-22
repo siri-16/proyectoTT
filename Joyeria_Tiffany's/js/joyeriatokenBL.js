@@ -1,5 +1,3 @@
-const url= 'http://localhost:8088/Tokenizer/Tokens/JTF836412700'
-
 function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTransaccion, pToken, pVigencia){
     var newTokenPAN = {
       "fechaActualizacion": pFechaActualizacion,
@@ -12,17 +10,19 @@ function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTran
       },
       "vigencia": pVigencia
     }
-    var t;
-    fetch(url, {
+
+    fetch('http://localhost:8088/Tokenizer/Tokens/JTF836412700', {
       method: 'POST',
       body: JSON.stringify(newTokenPAN),
       headers: {
         "Content-type": "application/json"
       }
     })
-      //.then(res => res.json())
-      .then(res => {
-                    const datosRecibidosPorServidor = JSON.parse(res.data);
-                    return t = datosRecibidosPorServidor.token;
-      });            //regresar el token a donde fue llamada la funcion return data.token;
+    .then(res => res.ok ? Promise.resolve(res) : Promise.reject(res))
+    .then(res => res.json())
+    .then(res => {
+        console.log('EEEEEEEEEEEEEEEEEEL TOOOOOOOOOOKEN'+res.token)
+        return res.token;
+    })
+        //regresar el token a donde fue llamada la funcion return data.token;
 }
