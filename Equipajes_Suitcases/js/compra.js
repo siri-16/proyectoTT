@@ -96,37 +96,3 @@ function procesarCompra() {
 
     }
 }
-
-//SIMILAR A FormularioUILogic.js
-document.querySelector('#procesar-compra').addEventListener('click', procesarToken) 
-
-function procesarToken(){
-//fecha de compra con funcion en javascript que genere aleatoriamente
-		var sIdtransaccion= Math.random(); //generarlo con funcion aleatoria
-		var sIdPedido= sIdtransaccion; //generarlo con funcion aleatoria
-		var sFechaCompra= new Date(); //generarlo con funcion aleatoria
-        var sFechaActualizacion= sFechaCompra;
-        var sFechaCreacion= sFechaCompra;
- 
-    solicitarToken(
-        sPan,
-        null, //rfc
-        sFechaActualizacion, //fecha_actualizacion
-        sFechaCreacion, //fecha_creacion
-        sIdTransaccion,
-        null,
-        null
-    )
- 
-    addTransaccionToSystem(
-        sIdtransaccion, //IdTransaccion
-        sIdPedido, //
-        sFechaCompra,
-        sClienteComprador,
-        sCorreoClienteComprador,
-        null //token
-    );
-    alert("¡Compra exitosa!");        
-    window.location="index.html";
- 
-}
