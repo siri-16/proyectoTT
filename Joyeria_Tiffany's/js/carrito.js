@@ -31,7 +31,7 @@ class Carrito {
         if(productosLS === infoProducto.id){
             Swal.fire({
                 type: 'info',
-                title: 'Oops...',
+                title: '¡Error!...',
                 text: 'El producto ya está agregado',
                 showConfirmButton: false,
                 timer: 1000
@@ -184,7 +184,7 @@ class Carrito {
         if(this.obtenerProductosLocalStorage().length === 0){
             Swal.fire({
                 type: 'error',
-                title: 'Oops...',
+                title: '¡Error!...',
                 text: 'El carrito está vacío, agrega algún producto',
                 showConfirmButton: false,
                 timer: 2000
@@ -206,13 +206,7 @@ class Carrito {
             
         }
         
-        /*SIN BUBTOTAL E IVA
-        igv = parseFloat(total * 0.18).toFixed(2);
-        subtotal = parseFloat(total-igv).toFixed(2);
-
-        document.getElementById('subtotal').innerHTML = "S/. " + subtotal;
-        document.getElementById('igv').innerHTML = "S/. " + igv; */
-        document.getElementById('total').value = "S/. " + total.toFixed(2);
+        document.getElementById('total').value = total.toFixed(2) + " MXN";
     }
 
     obtenerEvento(e) {

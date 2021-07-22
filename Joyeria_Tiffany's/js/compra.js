@@ -35,7 +35,7 @@ function procesarCompra() {
     if (compra.obtenerProductosLocalStorage().length === 0) {
         Swal.fire({
             type: 'error',
-            title: 'Oops...',
+            title: '¡Error!...',
             text: 'No hay productos, selecciona alguno',
             showConfirmButton: false,
             timer: 2000
@@ -46,7 +46,7 @@ function procesarCompra() {
     else if (ClienteComprador.value === '' || CorreoClienteComprador.value === '') {
         Swal.fire({
             type: 'error',
-            title: 'Oops...',
+            title: '¡Error!...',
             text: 'Ingrese todos los campos requeridos',
             showConfirmButton: false,
             timer: 2000
@@ -64,7 +64,7 @@ function procesarCompra() {
         myform.submit( (event) => {
             event.preventDefault();
 
-            // Change to your service ID, or keep using the default service
+            // ID del servicio
             var service_id = "default_service";
             var template_id = "template_3SA9LsqQ";
 
