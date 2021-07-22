@@ -45,7 +45,7 @@ function addTransaccionToSystem(
     ]
   }
 
-  fetch('http://localhost:8077/Joyeria/Pedidos/', {
+  fetch('http://ec2-18-117-194-255.us-east-2.compute.amazonaws.com:8077/Joyeria/Pedidos/', {
     method: 'POST',
     body: JSON.stringify(nuevaCompra),
     headers: {

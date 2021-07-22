@@ -1,4 +1,8 @@
-const url= 'http://localhost:8088/Tokenizer/Clientes/%20/Usuarios/list'
+// URL PARA CORRER DE MANERA LOCAL
+// const url= 'http://localhost:8088/Tokenizer/Clientes/%20/Usuarios/list'
+
+//URL PARA CORRER DESDE LA INSTANCIA DE AWS
+const url= 'http://ec2-3-138-181-230.us-east-2.compute.amazonaws.com:8088/Tokenizer/Clientes/%20/Usuarios/list'
 
 function consultarUsuario(pNombreUsuario, pContrasenia){
     var newUsuario = {
