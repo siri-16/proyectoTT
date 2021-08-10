@@ -11,7 +11,7 @@ function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTran
       "vigencia": pVigencia
     }
 
-    fetch('http://ec2-3-138-181-230.us-east-2.compute.amazonaws.com:8088/Tokenizer/Tokens/JTF836412700', {
+    fetch('http://ec2-13-58-32-61.us-east-2.compute.amazonaws.com:8077/Tokenizer/Tokens/JTF836412700', {
       method: 'POST',
       body: JSON.stringify(newTokenPAN),
       headers: {

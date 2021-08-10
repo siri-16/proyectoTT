@@ -44,8 +44,8 @@ function addTransaccionToSystem(
       }
     ]
   }
-
-  fetch('http://ec2-18-117-194-255.us-east-2.compute.amazonaws.com:8077/Joyeria/Pedidos/', {
+  ec2-13-58-32-61.us-east-2.compute.amazonaws.com
+  fetch('http://ec2-13-58-32-61.us-east-2.compute.amazonaws.com:8077/Joyeria/Pedidos/', {
     method: 'POST',
     body: JSON.stringify(nuevaCompra),
     headers: {
