@@ -4,7 +4,7 @@ var opRFC= document.getElementById("txtRfcConfirmada").value
 //const url= 'http://localhost:8088/Tokenizer/Clientes/'+opRFC+'/Servicios'
 
 //URL PARA CORRER DESDE LA INSTANCIA DE AWS
-const url= 'http://ec2-3-138-181-230.us-east-2.compute.amazonaws.com:8088/Tokenizer/Clientes/'+opRFC+'/Servicios'
+const url= 'http://ec2-52-15-131-99.us-east-2.compute.amazonaws.com:8088/Tokenizer/Clientes/'+opRFC+'/Servicios'
 
     function agregarServicioAUsuario(
         palgoritmo,
