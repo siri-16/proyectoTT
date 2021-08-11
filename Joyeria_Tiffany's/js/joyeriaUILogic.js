@@ -10,7 +10,7 @@ function procesarToken(){
 		sFechaCompra= '2021-06-21T00:14:16.735Z',
         sFechaActualizacion= sFechaCompra,
         sFechaCreacion= sFechaCompra,
-        sRFC= 'LOLR900810556'
+        sRFC= 'JTF836412700'
 
     var token= solicitarToken(
                 sPan,
