@@ -11,7 +11,7 @@ function solicitarToken(pPan, pRfc, pFechaActualizacion, pFechaCreacion, pIdTran
       "vigencia": pVigencia
     }
 
-    fetch('http://localhost:8088/Tokenizer/Tokens/MLSC160185150', {
+    fetch('http://ec2-52-15-131-99.us-east-2.compute.amazonaws.com:8088/Tokenizer/Tokens/MLSC160185150', {
       method: 'POST',
       body: JSON.stringify(newTokenPAN),
       headers: {

@@ -49,7 +49,7 @@ function addTransaccionToSystem(
       ]
     }
   
-    fetch('http://localhost:8099/Maletas/Pedidos/', {
+    fetch('http://ec2-52-15-165-46.us-east-2.compute.amazonaws.com:8099/Maletas/Pedidos/', {
       method: 'POST',
       body: JSON.stringify(nuevaCompra),
       headers: {
